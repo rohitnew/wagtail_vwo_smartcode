@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: wagtail-vwo-smartcode
+Version: 0.2
+Summary: Injects VWO SmartCode (sync or async) into Wagtail pages for A/B testing
+Author: VWO
+Classifier: Framework :: Django
+Classifier: Framework :: Wagtail
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+License-File: LICENSE

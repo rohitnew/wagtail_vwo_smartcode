@@ -1,0 +1,56 @@
+{% load static wagtailadmin_tags %}
+
+<div class="help-panel">
+    <style>
+        .help-panel {
+            background: #1D1D1D;
+            border: 1px solid #414651;
+            border-radius: 6px;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+            margin-top: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+        .help-panel__content {
+            flex: 1;
+        }
+        .help-panel__title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+        .help-panel__text {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        .help-panel__link {
+            color: #357E92;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .help-panel__button {
+            background: #357E92;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+    <div class="help-panel__content">
+        <div class="help-panel__title">New to VWO?</div>
+        <div class="help-panel__text">
+            Unlock A/B testing, heat-maps, and more. Learn more in our 
+            <a href="https://vwo.com/knowledge/" target="_blank" class="help-panel__link">VWO Knowledge Base</a>
+        </div>
+    </div>
+    <a href="https://vwo.com/free-trial/" target="_blank" class="help-panel__button">Get Started for Free</a>
+</div> 
