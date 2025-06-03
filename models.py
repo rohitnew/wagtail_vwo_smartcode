@@ -38,17 +38,21 @@ class VWOSettings(BaseSiteSetting):
         verbose_name = 'VWO Settings'
 
     panels = [
+        HelpPanel(
+                template='wagtail_vwo_smartcode/help_panel.html',
+                classname="vwo-help-panel"
+            ),
         MultiFieldPanel(
             [   
-                HelpPanel(
-                    template='wagtail_vwo_smartcode/help_panel.html',
-                    classname="vwo-help-panel"
-                ),
                 FieldPanel('vwo_account_id'),
                 FieldPanel('async_load'),
                 FieldPanel('settings_tolerance'),
             ],
             heading="VWO Configuration",
             classname="collapsible"
+        ),
+        HelpPanel(
+                    template='wagtail_vwo_smartcode/help_panel_report.html',
+                    classname="vwo-help-panel"
         ),
     ] 
